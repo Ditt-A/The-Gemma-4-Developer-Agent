@@ -1,0 +1,1339 @@
+[
+  {
+    "ref": "flexonafft/gemma-4-budget-aware-coding-agent-v2",
+    "public_score": 0.22,
+    "version": 10,
+    "session_id": "357955943",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+    },
+    "content_fingerprint": "56010e9e9d4c7f33856ce49d12ec3edae5c912261986e999a4aa989b3cd463cb",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+    "public_score": 0.2,
+    "version": 32,
+    "session_id": "359522074",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "d92b7b6f3ea6d9ee6ac4180c0f8f55154b41d3b70385bacfd53d4aecbd2b9ab0",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "811d013466d5a89b7e4aac44e7629c5ee73830bcdb13ff67e5f81de8b5b9c386"
+    },
+    "content_fingerprint": "deaa30df728e37aefdc6d0097aa949c832d14f151b15ac1fb4c57079790e99dc",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "jvnhonglei/gemma-4-superagent-reproduction",
+    "public_score": 0.2,
+    "version": 1,
+    "session_id": "358224038",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "63b8846d1b9ab15286a763bb88401de1a88fa1bb947098408d4fca1f559c2681",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "9eb0bc7d9e3eaef21dac45a64d6c3ea69246dfde0b6a5e34c9563b7fbed3b291"
+    },
+    "content_fingerprint": "9f8886a9f09c5a6ddb7d51fc9643a95ca86ff89daf62c8d728ea6df14c02b396",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "evgendvorkin/google-the-gemma-4",
+    "public_score": 0.18,
+    "version": 16,
+    "session_id": "360035019",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "e5916bdb735a56a07bdd574bbde54f4d20bee92d067ab41391138c372c1008e5",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "693e53903b3710324fa0a17bca6419818ad6fd09452ee689585545c0ee2ef46a"
+    },
+    "content_fingerprint": "d328b5b4a0e3128f8db20d8eb73755a633036d5d828923d1cb4fcf5a67f053d0",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation",
+    "public_score": 0.18,
+    "version": 12,
+    "session_id": "356256255",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "eb3d5ebf21ce39b186d42937de593e3be62bc329024d59e8693e6c5ce1b20c63",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "public_score": 0.18,
+    "version": 5,
+    "session_id": "355310852",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "1cb73986bd9ad1682896d56516cfd3df7f4d5729c7ecfe7afda109c175dbbb94",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "lavinwins/gemma-4-autonomous-developer-agent-calibrated-sin",
+    "public_score": 0.18,
+    "version": 1,
+    "session_id": "355611106",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "d6ff4a041ad622d5a9a2de96c885c7c49ed5ed176413ae6b7161beaee00cd5c7",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "honghanhhh/gemma-4-baseline-lb-0-24",
+    "public_score": 0.18,
+    "version": 3,
+    "session_id": "355856877",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "9387949b1e035d4ad4dc6d26713dcb5eaaa888e14a62a23ba66edd33eaff7d3c",
+    "member_sha256": {
+      "agent.yaml": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "7163e6644c452adc551a50a23f70087361415c78b7935b90a3614b5c9a94ba90"
+    },
+    "content_fingerprint": "5d05a6e0430a9152546e4aa8b156e143d0ccc3115b688169df7ff1361630d46b",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "samvalladares/gemma-4-agent-budget-fit-single-agent",
+    "public_score": 0.18,
+    "version": 1,
+    "session_id": "355976064",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "27b06d5f02595edd22d66e67f6c8614f4f0a62180111c1cba38375ab6083ed37",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "nilanjansaha123/gemma-4-dev-agent-contract-first-1-agent-bundle",
+    "public_score": 0.18,
+    "version": 1,
+    "session_id": "357147785",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "a640ff7825b5e09f1a02ee2f608f16ec327af454ef341ed71e0e51ee8ccfda5d",
+    "member_sha256": {
+      "agent.yaml": "c09a7165d4e66d52805c3981ad10c595877e631031979163d9e7e8c7dc1dc9b1",
+      "configs/sampling.yaml": "3dab0b2506dae34ce92fef7b380d6073729104b23fe2cf66d44ac1d2f213aa6a",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "b9db606d3b94e9a43eb9a7221354b19d2e1bab10984589e1ec21b65eb2e14555"
+    },
+    "content_fingerprint": "4818140d530d270d46ca91c4f93e70b6623462c2efac21a37068474749ee67b8",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "16384"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "nilanjansaha123/gemma-4-v5",
+    "public_score": 0.18,
+    "version": 1,
+    "session_id": "357799486",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "8cc2db965a298eb490bd23def621fa3f3243b4f256e7a68e2f5b31a3c4e21ae9",
+    "member_sha256": {
+      "agent.yaml": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "7c8a7863ab8a158ddaf074b21563854cd4a773bf51d0e9beee4dfe814d14ebc7"
+    },
+    "content_fingerprint": "4517b36bd3dad1bc99a15dbaf9e28960276216db4c1b279e4478f6d996088988",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "lynnsakurai/gemma-4-budget-fit-agent-w-bounded-rescue",
+    "public_score": 0.18,
+    "version": 2,
+    "session_id": "358320692",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "a4b10f6b8034fd7fffa144a7ee3fbd8faf9a84503ffb1349d1522ba048b534d3",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "a42c35081c08f316fc76b02886c82d4073e6c143b63c40a86085b382b8bf113e"
+    },
+    "content_fingerprint": "e3c89f359f33fc98804eb81e98e85bcf49e56d009576eda017d2f5603550a60a",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "dmitriigluzdov/gemma-4-public-agent-ideas-and-evidence",
+    "public_score": 0.18,
+    "version": 1,
+    "session_id": "358528774",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "44c9343ebe5d79cf34e1cf6c159abd7a716d11e6b0a7cd7d9e69e3fba86dba77",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+    },
+    "content_fingerprint": "56010e9e9d4c7f33856ce49d12ec3edae5c912261986e999a4aa989b3cd463cb",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "leoprovorov/single-agent-anytime-patch",
+    "public_score": 0.17,
+    "version": 4,
+    "session_id": "357799539",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "7e3cad20d4464a6ed567ba86e409fb3c8e0b29f45ffb4b1af63f36c7baa839e2",
+    "member_sha256": {
+      "agent.yaml": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "2b81a4c0f8ac2f2335925c577fb56a37796a2e14e5b53ecc1bc469c4947f8522"
+    },
+    "content_fingerprint": "b8905aeba1174512a63a6f8f2d14c7fa58049bbdca33550a9a6ca4e0a01c830c",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "nihilisticneuralnet/gemma-4-developer-agent-direct-code-verifier",
+    "public_score": 0.17,
+    "version": 22,
+    "session_id": "356566368",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "f40ac0209541fd64ce00b1ab11ffdf345b7bb16c581a50102b443b61e3092c84",
+    "member_sha256": {
+      "agent.yaml": "ab15dec37aa453dad78d49e53f2e34967f51dcb1f27f6a9e2ee8be05aa51f9d0",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "306828f337e942aa032362550198f93f48554b0e0c3d0bf01481bac021453c65"
+    },
+    "content_fingerprint": "a0f068b99823e21ddfca733d7dd6f8bbc239cb1d5c71f8a8abc37aa1e33289d6",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "matterhorn3838/gemma-4-superagent",
+    "public_score": 0.17,
+    "version": 5,
+    "session_id": "355922587",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "ecad3269d1f5d945a0f3a6c560aa61e17b482d577659d99925de775d92058c69",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "juna1013/gemma4-agent-submission",
+    "public_score": 0.17,
+    "version": 4,
+    "session_id": "355744946",
+    "members": [
+      "configs/",
+      "prompts/",
+      "agent.yaml",
+      "eval_config.yaml",
+      "prompts/system.md",
+      "configs/sampling.yaml"
+    ],
+    "sha256": "b64b551947f5a67c1e772ddb5c0c0543ecd92f328596f9f6e22c3f87367ab372",
+    "member_sha256": {
+      "agent.yaml": "529fa578e00ae168db0995997e3fb86ed559ad171011cd2533c221cf57259658",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "9adb8e1f383e039ec58aee57b8c61a3855bd36246d8b00b84679e8b9c998c783",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926"
+    },
+    "content_fingerprint": "4249846717c7d482c60381b5d5e5590dd22eb448c826123d2022215e61dfee1e",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "hanifnoerrofiq/patchsmith-gemma-4-developer-agent",
+    "public_score": 0.17,
+    "version": 4,
+    "session_id": "358275501",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "2cdf2b796ee1ff136cef4013fbde1eee57b39868b62b9ba742dd29645450cccf",
+    "member_sha256": {
+      "agent.yaml": "7b9eda6f20b04e3e0af89186499420b8cffd7c8e01f062b004ebe39d49d61449",
+      "configs/sampling.yaml": "35ee8affce4eb7e2e4d031b3f78461624bc1c0047ce127994f4e125aecf3cdac",
+      "eval_config.yaml": "2bfed9dee5fce624935241d3413cf7542725b7abe18833f6c0fa493a51607364",
+      "prompts/system.md": "529feed9a1ef2115d202c3dfae1eb4b0978740e266538795171ade9538c76f2a"
+    },
+    "content_fingerprint": "c5e549159ab1dbb71de44fc3c04c00360533d5d301165f694ddc093d7ac8e593",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "6144"
+    ],
+    "thinking_budget": [
+      "2048"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "20"
+    ],
+    "max_time_minutes": [
+      "4"
+    ],
+    "timeout_seconds": [
+      "45"
+    ],
+    "max_turns": [
+      "32"
+    ]
+  },
+  {
+    "ref": "yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5",
+    "public_score": 0.17,
+    "version": 1,
+    "session_id": "356344238",
+    "members": [
+      "agent.yaml",
+      "configs/analyzer_sampling.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/analyzer.md",
+      "prompts/system.md",
+      "skills/g4-edit/SKILL.md",
+      "skills/g4-edit/scripts/g4edit.py",
+      "skills/g4-edit/scripts/install.py",
+      "sub_agents/code_analyzer.yaml",
+      "sub_agents/workflow.yaml"
+    ],
+    "sha256": "7515f0d89f26218f0f88caf336fbb5ecaf9db967b3e78ec74870cadd11c54040",
+    "member_sha256": {
+      "agent.yaml": "a650916e28707620f2471679309dc0e5bc27d8b3a4a30960111e4814f72afb47",
+      "configs/analyzer_sampling.yaml": "813fc83ceaa46ee494f1cc997e920e26062cdbeb6f6ac49aa45258bdbdce578e",
+      "configs/sampling.yaml": "813fc83ceaa46ee494f1cc997e920e26062cdbeb6f6ac49aa45258bdbdce578e",
+      "eval_config.yaml": "834c9edc6a7252aee047b3f182cdb43530aef466d2ee7caec92b7af1d64a039d",
+      "prompts/analyzer.md": "ed0a071328ca99b77ae1366352d1139337692a104e0a881c401f853dc418aecb",
+      "prompts/system.md": "aafb4a2844e32c1911dca8109c06e685607a449a35c723f97abdb9af20245906",
+      "skills/g4-edit/SKILL.md": "b16d236fdb75116c58a70cd95a34d5f3df11348c72a9330f0ab184f16f225037",
+      "skills/g4-edit/scripts/g4edit.py": "15e61646a22818ba166e29da95887081664ee42c5dee73903b0f865481975583",
+      "skills/g4-edit/scripts/install.py": "e37b95d3edf8f430a2c474eaac1339b8f142af376df361fa1f3dd517455c67b9",
+      "sub_agents/code_analyzer.yaml": "32a4f49714ec8486cbd73edf38996f0eb31ecdaea6ca61345934651d55c57a0e",
+      "sub_agents/workflow.yaml": "9b77154b2d43f60dd49bad8766650207c08e2f09f581b254852e8de99aaf61d9"
+    },
+    "content_fingerprint": "73c126f8635ef6d0cb1665c61f0cd88cb83a76d6fbc526a0c64c3f1164c8e799",
+    "has_adapter": false,
+    "has_subagents": true,
+    "has_skills": true,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "1.0"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "2048"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "false"
+    ],
+    "max_tool_calls": [
+      "100"
+    ],
+    "max_time_minutes": [
+      "7.5"
+    ],
+    "timeout_seconds": [
+      "300"
+    ],
+    "max_turns": [
+      "120"
+    ]
+  },
+  {
+    "ref": "lambdaderta/single-agent-tuning",
+    "public_score": 0.17,
+    "version": 2,
+    "session_id": "358766411",
+    "members": [
+      "agent.yaml",
+      "eval_config.yaml"
+    ],
+    "sha256": "cdd13a299e587657bac3ce1206a6b014c22026d1c0ae4f0ea395dc4c2138bc2f",
+    "member_sha256": {
+      "agent.yaml": "8a77981a4677229a31920f1a25ef3874193f503529282b73093cb388f666e411",
+      "eval_config.yaml": "3502a5dbd9f684b5079fb2c3011d02de975defebe6809ca767c73b18421ba0c0"
+    },
+    "content_fingerprint": "6d8c936e470daf41b4d68d4f99d2a1df68d1984340ece7d823382c9349214085",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8.0"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "ozertuu/gemma-4-gold-submit",
+    "public_score": 0.17,
+    "version": 2,
+    "session_id": "357834662",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "2fcc486b7eab6841d29c347062dce2d952e49c8d5ed14b483dff483761d57b35",
+    "member_sha256": {
+      "agent.yaml": "d9c53440625e5392ac4b8df71b186e181af996b0fd6144f9e67eb677ac5c92b2",
+      "configs/sampling.yaml": "76721de8951126338045dea5b4c7a7859b50d82e224c4ff34b9a2b5b491b00b4",
+      "eval_config.yaml": "e3ad5e5b630daa7619ef128bbcd7d0774c2a1eccb91efd6395a3ab0b1065e361",
+      "prompts/system.md": "ac37e15bd20c2a60a35dc36c929a8aa87218db258b1b552374bba1649aec3f38"
+    },
+    "content_fingerprint": "b053bcf1e52e106f03cf3bc1bd5a642866fdd8e22540c1af9499ff8e8f4e1e3b",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "kaiwalyaatulraut/google-the-gemma-4",
+    "public_score": 0.17,
+    "version": 1,
+    "session_id": "359363545",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+    },
+    "content_fingerprint": "56010e9e9d4c7f33856ce49d12ec3edae5c912261986e999a4aa989b3cd463cb",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "davis0178/gemma-4-agent-baseline",
+    "public_score": 0.17,
+    "version": 5,
+    "session_id": "360081606",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "e387ba9b5c7e69bb3ceb4848329c4c6f47574907ebf806596c4de1fdbc1fdc7d",
+    "member_sha256": {
+      "agent.yaml": "4ccb75f2b7c1f6a8acc619bf6bda344f58598a9bc9c57f0ad655f69f97cc88b7",
+      "configs/sampling.yaml": "c8e6851c2b4c846dedd0cab39dd293f9fa66ef089cb1cb91382fe9530e9f9bb0",
+      "eval_config.yaml": "e1786906d99cb6412a0704533307cbb247412054b543d98f37099009684d0d07",
+      "prompts/system.md": "cf6a4581fcf7922535477f8face45e904a3c7cb7fca0936ea11d56aea4f514e7"
+    },
+    "content_fingerprint": "b343b0e5e4a0b4e2cc0fc2fecf44fcbf4d07ebf51945d28151c3b8ca78a38667",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "300"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "zhukovoleksiy/gemma-4-walkthrough-findings-submission",
+    "public_score": 0.15,
+    "version": 8,
+    "session_id": "358823022",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "67c325843372c219c5d0854289438d0fa3ad228ebe12875f09c947fbc034395c",
+    "member_sha256": {
+      "agent.yaml": "3e2afaf28356a755bc5b803259848da0ff4254a00e96a434258989601edd2cb4",
+      "configs/sampling.yaml": "630056889710d27dbf17c8fde62e033b7329616b7db435987cb4607b66a7c3f6",
+      "eval_config.yaml": "ab47233d109f4862350dbe37f1b6d813387330ab760f17156eebffb97f3f2e8e",
+      "prompts/system.md": "1555e068de4dc2788acfb0424c540b4ed17cda547b569e9b950af5a5c7a4c526"
+    },
+    "content_fingerprint": "803f7b8ca93e318950e568ad70aa0387465cad0e6f14415d5dc38da52b896e0e",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "1.0"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "7"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  },
+  {
+    "ref": "matterhorn3838/gemma-gemini-the-ultimate-duo",
+    "public_score": 0.15,
+    "version": 3,
+    "session_id": "355588402",
+    "members": [
+      "agent.yaml",
+      "configs/sampling.yaml",
+      "eval_config.yaml",
+      "prompts/system.md"
+    ],
+    "sha256": "2e93ac9af07accf5a658ee426238d187e5109c35eb6a1f3682eb8c401b1f2723",
+    "member_sha256": {
+      "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+      "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+      "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+      "prompts/system.md": "475cc9b7fcc0dc295532f5cb5e1928f26a491f501837ad08b1c79bdbe1a3eaa4"
+    },
+    "content_fingerprint": "c9829b6ac7093a028a7001fe180a41c6d0dd24beb04b7edfeb75575c55003364",
+    "has_adapter": false,
+    "has_subagents": false,
+    "has_skills": false,
+    "model": [
+      "gemma-4-31b-it-qat-w4a16-ct"
+    ],
+    "temperature": [
+      "0.2"
+    ],
+    "top_p": [
+      "0.95"
+    ],
+    "max_output_tokens": [
+      "8192"
+    ],
+    "thinking_budget": [
+      "4096"
+    ],
+    "include_thoughts": [
+      "true"
+    ],
+    "max_tool_calls": [
+      "28"
+    ],
+    "max_time_minutes": [
+      "8"
+    ],
+    "timeout_seconds": [
+      "240"
+    ],
+    "max_turns": [
+      "80"
+    ]
+  }
+]

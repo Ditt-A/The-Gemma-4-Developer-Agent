@@ -1,0 +1,15 @@
+Gemma 4 Budget-Aware Verified V1 (2026).
+This submission adapts the public Budget-Aware V10 agent prompt and configuration:
+Igor Zharov / flexonafft, Gemma 4 | Budget-Aware Coding Agent v2.
+https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943
+The source credits matterhorn3838's Gemma 4 SuperAgent and the official starter.
+Post-final-edit verification is informed by prvsiyan's E05 experiment:
+https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=359522074
+Local modifications: final-revision verification, bounded checks with accurate exit
+status, current protected-file semantics, early stopping, and explicit completion.
+No score is claimed for this derivative. Prior scores belong to the cited sources.
+Distributed under Apache License 2.0; original attributions are preserved here.
+
+GPU notebook setup adapts the official starter by Ryan Holbrook:
+https://www.kaggle.com/code/ryanholbrook/getting-started-gemma-4-developer-agent
+Repository tooling separates editable agent sources, generated notebooks and local run records.

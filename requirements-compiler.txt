@@ -1,0 +1,4 @@
+-r requirements.txt
+# Obtain these official wheels from the organizer's Kaggle wheelhouse first.
+.local/wheels/google_adk-1.36.1-py3-none-any.whl
+.local/wheels/adk_submission-0.2.13-py3-none-any.whl

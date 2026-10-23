@@ -1,0 +1,16 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/gemma-4-budget-aware-verified-v1",
+  "title": "Gemma 4 Budget-Aware Verified V1",
+  "code_file": "submission.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "gemma-4-developer-agent"
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

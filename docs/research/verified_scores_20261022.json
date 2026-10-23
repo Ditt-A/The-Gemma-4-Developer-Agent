@@ -1,0 +1,259 @@
+[
+  {
+    "ref": "flexonafft/gemma-4-budget-aware-coding-agent-v2",
+    "score": {
+      "scoreFormatted": "0.22",
+      "kernelVersionName": "--try batched-search & edit-recovery",
+      "kernelVersionNumber": 10,
+      "kernelSessionUrl": "/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943"
+    },
+    "current_version": 10,
+    "public_score": 0.22
+  },
+  {
+    "ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+    "score": {
+      "scoreFormatted": "0.20",
+      "kernelVersionNumber": 32,
+      "kernelSessionUrl": "/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=359522074"
+    },
+    "current_version": 35,
+    "public_score": 0.2
+  },
+  {
+    "ref": "jvnhonglei/gemma-4-superagent-reproduction",
+    "score": {
+      "scoreFormatted": "0.20",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/jvnhonglei/gemma-4-superagent-reproduction?scriptVersionId=358224038"
+    },
+    "current_version": 1,
+    "public_score": 0.2
+  },
+  {
+    "ref": "evgendvorkin/google-the-gemma-4",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionName": "Version 16",
+      "kernelVersionNumber": 16,
+      "kernelSessionUrl": "/code/evgendvorkin/google-the-gemma-4?scriptVersionId=360035019"
+    },
+    "current_version": 19,
+    "public_score": 0.18
+  },
+  {
+    "ref": "dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 12,
+      "kernelSessionUrl": "/code/dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation?scriptVersionId=356256255"
+    },
+    "current_version": 21,
+    "public_score": 0.18
+  },
+  {
+    "ref": "verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 5,
+      "kernelSessionUrl": "/code/verracodeguacas/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355310852"
+    },
+    "current_version": 5,
+    "public_score": 0.18
+  },
+  {
+    "ref": "lavinwins/gemma-4-autonomous-developer-agent-calibrated-sin",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/lavinwins/gemma-4-autonomous-developer-agent-calibrated-sin?scriptVersionId=355611106"
+    },
+    "current_version": 3,
+    "public_score": 0.18
+  },
+  {
+    "ref": "honghanhhh/gemma-4-baseline-lb-0-24",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 3,
+      "kernelSessionUrl": "/code/honghanhhh/gemma-4-baseline-lb-0-24?scriptVersionId=355856877"
+    },
+    "current_version": 7,
+    "public_score": 0.18
+  },
+  {
+    "ref": "samvalladares/gemma-4-agent-budget-fit-single-agent",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/samvalladares/gemma-4-agent-budget-fit-single-agent?scriptVersionId=355976064"
+    },
+    "current_version": 4,
+    "public_score": 0.18
+  },
+  {
+    "ref": "nilanjansaha123/gemma-4-dev-agent-contract-first-1-agent-bundle",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/nilanjansaha123/gemma-4-dev-agent-contract-first-1-agent-bundle?scriptVersionId=357147785"
+    },
+    "current_version": 1,
+    "public_score": 0.18
+  },
+  {
+    "ref": "nilanjansaha123/gemma-4-v5",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/nilanjansaha123/gemma-4-v5?scriptVersionId=357799486"
+    },
+    "current_version": 1,
+    "public_score": 0.18
+  },
+  {
+    "ref": "lynnsakurai/gemma-4-budget-fit-agent-w-bounded-rescue",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 2,
+      "kernelSessionUrl": "/code/lynnsakurai/gemma-4-budget-fit-agent-w-bounded-rescue?scriptVersionId=358320692"
+    },
+    "current_version": 3,
+    "public_score": 0.18
+  },
+  {
+    "ref": "dmitriigluzdov/gemma-4-public-agent-ideas-and-evidence",
+    "score": {
+      "scoreFormatted": "0.18",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/dmitriigluzdov/gemma-4-public-agent-ideas-and-evidence?scriptVersionId=358528774"
+    },
+    "current_version": 7,
+    "public_score": 0.18
+  },
+  {
+    "ref": "leoprovorov/single-agent-anytime-patch",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 4,
+      "kernelSessionUrl": "/code/leoprovorov/single-agent-anytime-patch?scriptVersionId=357799539"
+    },
+    "current_version": 6,
+    "public_score": 0.17
+  },
+  {
+    "ref": "nihilisticneuralnet/gemma-4-developer-agent-direct-code-verifier",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionName": "Version 21",
+      "kernelVersionNumber": 22,
+      "kernelSessionUrl": "/code/nihilisticneuralnet/gemma-4-developer-agent-direct-code-verifier?scriptVersionId=356566368"
+    },
+    "current_version": 23,
+    "public_score": 0.17
+  },
+  {
+    "ref": "matterhorn3838/gemma-4-superagent",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionName": "Version 5",
+      "kernelVersionNumber": 5,
+      "kernelSessionUrl": "/code/matterhorn3838/gemma-4-superagent?scriptVersionId=355922587"
+    },
+    "current_version": 8,
+    "public_score": 0.17
+  },
+  {
+    "ref": "juna1013/gemma4-agent-submission",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionName": "#4 限られた予算の効率化",
+      "kernelVersionNumber": 4,
+      "kernelSessionUrl": "/code/juna1013/gemma4-agent-submission?scriptVersionId=355744946"
+    },
+    "current_version": 4,
+    "public_score": 0.17
+  },
+  {
+    "ref": "hanifnoerrofiq/patchsmith-gemma-4-developer-agent",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 4,
+      "kernelSessionUrl": "/code/hanifnoerrofiq/patchsmith-gemma-4-developer-agent?scriptVersionId=358275501"
+    },
+    "current_version": 6,
+    "public_score": 0.17
+  },
+  {
+    "ref": "yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5?scriptVersionId=356344238"
+    },
+    "current_version": 1,
+    "public_score": 0.17
+  },
+  {
+    "ref": "lambdaderta/single-agent-tuning",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 2,
+      "kernelSessionUrl": "/code/lambdaderta/single-agent-tuning?scriptVersionId=358766411"
+    },
+    "current_version": 4,
+    "public_score": 0.17
+  },
+  {
+    "ref": "ozertuu/gemma-4-gold-submit",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 2,
+      "kernelSessionUrl": "/code/ozertuu/gemma-4-gold-submit?scriptVersionId=357834662"
+    },
+    "current_version": 2,
+    "public_score": 0.17
+  },
+  {
+    "ref": "kaiwalyaatulraut/google-the-gemma-4",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionName": "Version 1",
+      "kernelVersionNumber": 1,
+      "kernelSessionUrl": "/code/kaiwalyaatulraut/google-the-gemma-4?scriptVersionId=359363545"
+    },
+    "current_version": 1,
+    "public_score": 0.17
+  },
+  {
+    "ref": "davis0178/gemma-4-agent-baseline",
+    "score": {
+      "scoreFormatted": "0.17",
+      "kernelVersionNumber": 5,
+      "kernelSessionUrl": "/code/davis0178/gemma-4-agent-baseline?scriptVersionId=360081606"
+    },
+    "current_version": 5,
+    "public_score": 0.17
+  },
+  {
+    "ref": "zhukovoleksiy/gemma-4-walkthrough-findings-submission",
+    "score": {
+      "scoreFormatted": "0.15",
+      "kernelVersionNumber": 8,
+      "kernelSessionUrl": "/code/zhukovoleksiy/gemma-4-walkthrough-findings-submission?scriptVersionId=358823022"
+    },
+    "current_version": 8,
+    "public_score": 0.15
+  },
+  {
+    "ref": "matterhorn3838/gemma-gemini-the-ultimate-duo",
+    "score": {
+      "scoreFormatted": "0.15",
+      "kernelVersionName": "Version 3",
+      "kernelVersionNumber": 3,
+      "kernelSessionUrl": "/code/matterhorn3838/gemma-gemini-the-ultimate-duo?scriptVersionId=355588402"
+    },
+    "current_version": 4,
+    "public_score": 0.15
+  }
+]

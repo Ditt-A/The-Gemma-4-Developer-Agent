@@ -1,0 +1,23 @@
+{
+  "candidate_id": "budget-aware-verified-v1",
+  "competition": "gemma-4-developer-agent",
+  "submitted_archive_sha256": "a5f2c86dd33bf107724515db42002ebc3c7a330cbd1e69fc0fe84f63b4b76d8d",
+  "submitted_archive_bytes": 8851,
+  "file_submission_id": 57549113,
+  "source_notebook_version": 2,
+  "upstream_url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+  "upstream_members": {
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+  },
+  "candidate_members": {
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "f0ef4c8ee8529b037b8e9aee9a6d46d95dc2c17aaa649be2789c8bebecfe61a4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "prompts/system.md": "88a8e7dd07399a4753da203a6be2f912dc23fccd9be8abd8fa1d383a21a60eaa"
+  }
+}

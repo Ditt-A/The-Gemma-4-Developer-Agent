@@ -1,0 +1,33 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# Machine-specific files, generated bundles, receipts and downloaded references
+.local/
+artifacts/
+runs/
+*.whl
+*.log
+.ipynb_checkpoints/
+*.executed.ipynb
+
+# Authentication and account-specific notebook metadata
+.env
+.env.*
+!.env.example
+**/kaggle.json
+**/kaggle (1).json
+**/access_token
+**/kernel-metadata.json
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
