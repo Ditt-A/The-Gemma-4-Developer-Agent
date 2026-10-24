@@ -24,6 +24,8 @@ python scripts/validate_compiler.py
 
 Receipt ditulis ke `runs/validation/compiler.json` dan terikat pada hash ZIP. Perubahan prompt atau konfigurasi memerlukan validasi ulang sebelum upload.
 
+Untuk reproduksi publik V10, gunakan source directory, output directory, receipt dan notebook terpisah seperti pada [panduan reproduksi V10](reproduction_v10.md). Perintah default di halaman ini tetap membangun V1; `scripts/reproduce_public.py` membangun artefak upstream yang identik.
+
 Autentikasi menggunakan mekanisme standar Kaggle atau flag `--credentials-file` yang menunjuk JSON `username`/`key` di luar repo. Build, generator, pengujian lokal, bantuan CLI, dan dry run tidak memerlukan kredensial. Tidak ada script yang membaca otomatis folder Downloads.
 
 ```powershell

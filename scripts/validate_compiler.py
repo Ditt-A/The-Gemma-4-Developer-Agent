@@ -7,14 +7,19 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
-from common import ROOT, AGENT_DIR, RUNS, build_bundle, load_agent_config, sha256_file, write_json
+from common import ROOT, AGENT_DIR, ARTIFACTS, CANDIDATE_ID, RUNS, build_bundle, load_agent_config, sha256_file, write_json
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.parse_args()
+    parser.add_argument("--agent-dir", type=Path, default=AGENT_DIR)
+    parser.add_argument("--output-dir", type=Path, default=ARTIFACTS)
+    parser.add_argument("--receipt", type=Path, default=RUNS / "validation/compiler.json")
+    parser.add_argument("--candidate-id", default=CANDIDATE_ID)
+    args = parser.parse_args()
     os.environ["OTEL_SDK_DISABLED"] = "true"
-    bundle, _ = build_bundle()
+    bundle, _ = build_bundle(args.agent_dir, args.output_dir, candidate_id=args.candidate_id)
+    config = load_agent_config(args.agent_dir)
     local = ROOT / ".local"
     local.mkdir(exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="compiler_fixture_", dir=local) as temporary:
@@ -105,13 +110,12 @@ def main():
 
         tools = {f.__name__: f for f in [run_command, read_file, edit_file, write_file, get_status, submit_patch, get_code_neighbors, search_similar_code, get_code_subgraph]}
         models = ModelRegistry()
-        models.register(load_agent_config()["model"], ScriptedModel(model="fixture-only-not-gemma"))
+        models.register(config["model"], ScriptedModel(model="fixture-only-not-gemma"))
         limits = SubmissionLimits(max_total_size_bytes=3 * 1024**3,
             allowed_file_extensions=frozenset({".yaml", ".yml", ".md", ".txt", ".py", ".json", ".safetensors"}),
             max_instruction_chars=1_000_000, max_total_instruction_chars=10_000_000)
         constraints = GenerationConstraints(allowed_fields=None, max_output_tokens=NumericRange(1, 32768), thinking_budget=NumericRange(0, 32768))
-        agent_dir = AGENT_DIR
-        config = load_agent_config()
+        agent_dir = args.agent_dir
         validate_directory(agent_dir, limits=limits)
         agent = compile_submission(agent_dir, tool_registry=tools, model_registry=models,
             limits=limits, generation_constraints=constraints)
@@ -132,13 +136,13 @@ def main():
         assert calls == ["read_file", "edit_file", "get_status", "run_command", "submit_patch"], calls
         result = subprocess.run([sys.executable, "-c", "from calculator import clamp; assert clamp(-5)==0; assert clamp(0)==0; assert clamp(7)==7"], cwd=fixture, capture_output=True, text=True)
         assert result.returncode == 0, result.stderr
-        receipt = {"notebook_cells_executed": False, "official_directory_validation": True,
+        receipt = {"candidate": args.candidate_id, "notebook_cells_executed": False, "official_directory_validation": True,
             "official_compiler": "adk-submission 0.2.13 / google-adk 1.36.1",
             "compiled_single_agent": True, "compiled_tools": sorted(tools), "scripted_adk_integration": True,
             "native_tool_sequence": calls, "events": len(events),
             "fixture_behavioral_assertions": True, "quality_benchmark": False,
             "archive_sha256": sha256_file(bundle)}
-        write_json(RUNS / "validation/compiler.json", receipt)
+        write_json(args.receipt, receipt)
         print(json.dumps(receipt, indent=2))
 
 

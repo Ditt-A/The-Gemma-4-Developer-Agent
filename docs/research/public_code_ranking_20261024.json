@@ -1,0 +1,608 @@
+{
+  "checked_utc": "2026-10-24T01:04:41.245984+00:00",
+  "source_url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/code",
+  "sort_by": "SCORE_DESCENDING",
+  "count": 100,
+  "kernels": [
+    {
+      "rank": 1,
+      "ref": "flexonafft/gemma-4-budget-aware-coding-agent-v2",
+      "best_public_score": 0.22,
+      "latest_script_version_id": 357955943
+    },
+    {
+      "rank": 2,
+      "ref": "prvsiyan/gemma-and-the-shape-of-doubt",
+      "best_public_score": 0.2,
+      "latest_script_version_id": 360363041
+    },
+    {
+      "rank": 3,
+      "ref": "jvnhonglei/gemma-4-superagent-reproduction",
+      "best_public_score": 0.2,
+      "latest_script_version_id": 358224038
+    },
+    {
+      "rank": 4,
+      "ref": "evgendvorkin/google-the-gemma-4",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 361464051
+    },
+    {
+      "rank": 5,
+      "ref": "dmitriigluzdov/gemma-4-task-soundness-serving-and-evaluation",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 360509593
+    },
+    {
+      "rank": 6,
+      "ref": "verracodeguacas/gemma-4-agent-budget-fit-single-agent",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 355310852
+    },
+    {
+      "rank": 7,
+      "ref": "lavinwins/gemma-4-autonomous-developer-agent-calibrated-sin",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 360037337
+    },
+    {
+      "rank": 8,
+      "ref": "honghanhhh/gemma-4-baseline-lb-0-24",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 361393189
+    },
+    {
+      "rank": 9,
+      "ref": "samvalladares/gemma-4-agent-budget-fit-single-agent",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 357438539
+    },
+    {
+      "rank": 10,
+      "ref": "nilanjansaha123/gemma-4-dev-agent-contract-first-1-agent-bundle",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 357147785
+    },
+    {
+      "rank": 11,
+      "ref": "nilanjansaha123/gemma-4-v5",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 357799486
+    },
+    {
+      "rank": 12,
+      "ref": "lynnsakurai/gemma-4-budget-fit-agent-w-bounded-rescue",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 358677131
+    },
+    {
+      "rank": 13,
+      "ref": "dmitriigluzdov/gemma-4-public-agent-ideas-and-evidence",
+      "best_public_score": 0.18,
+      "latest_script_version_id": 360509626
+    },
+    {
+      "rank": 14,
+      "ref": "leoprovorov/single-agent-anytime-patch",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 361273624
+    },
+    {
+      "rank": 15,
+      "ref": "nihilisticneuralnet/gemma-4-developer-agent-direct-code-verifier",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 358507901
+    },
+    {
+      "rank": 16,
+      "ref": "matterhorn3838/gemma-4-superagent",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 356708976
+    },
+    {
+      "rank": 17,
+      "ref": "juna1013/gemma4-agent-submission",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 355744946
+    },
+    {
+      "rank": 18,
+      "ref": "hanifnoerrofiq/patchsmith-gemma-4-developer-agent",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 359697512
+    },
+    {
+      "rank": 19,
+      "ref": "yiyu0716/g4-pack-yiyu-v19-fixed-trace-t7p5",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 356344238
+    },
+    {
+      "rank": 20,
+      "ref": "lambdaderta/single-agent-tuning",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 359413431
+    },
+    {
+      "rank": 21,
+      "ref": "ozertuu/gemma-4-gold-submit",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 357834662
+    },
+    {
+      "rank": 22,
+      "ref": "kaiwalyaatulraut/google-the-gemma-4",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 359363545
+    },
+    {
+      "rank": 23,
+      "ref": "davis0178/gemma-4-agent-baseline",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 360081606
+    },
+    {
+      "rank": 24,
+      "ref": "xiuchisun/gemma-4-agent-budget-fit-31b-mainline",
+      "best_public_score": 0.17,
+      "latest_script_version_id": 361064349
+    },
+    {
+      "rank": 25,
+      "ref": "zhukovoleksiy/gemma-4-walkthrough-findings-submission",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 358823022
+    },
+    {
+      "rank": 26,
+      "ref": "matterhorn3838/gemma-gemini-the-ultimate-duo",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 357166648
+    },
+    {
+      "rank": 27,
+      "ref": "zhongyanxu/gemma-4-walkthrough-first-submission",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 360498186
+    },
+    {
+      "rank": 28,
+      "ref": "jingshuifu/gemma-4-dev-agent-budget-fit-v1",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 357959335
+    },
+    {
+      "rank": 29,
+      "ref": "jingshuifu/gemma-4-dev-agent-lb024",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 358251779
+    },
+    {
+      "rank": 30,
+      "ref": "denpugovkin/gemma-4-same-check-before-and-after",
+      "best_public_score": 0.15,
+      "latest_script_version_id": 361568921
+    },
+    {
+      "rank": 31,
+      "ref": "alfira17/the-gemma-4-developer-agent-competition",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 360412491
+    },
+    {
+      "rank": 32,
+      "ref": "lucifer19/agentic-counterexample-lab",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 356110685
+    },
+    {
+      "rank": 33,
+      "ref": "leoprovorov/gemma-4-the-complete-guide-expanded-full",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 357802044
+    },
+    {
+      "rank": 34,
+      "ref": "sushanthtiruvaipati/gemma4-swe-agent-v11-matterhorn",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 357893040
+    },
+    {
+      "rank": 35,
+      "ref": "ozertuu/gemma-4-v4-submit",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 359191543
+    },
+    {
+      "rank": 36,
+      "ref": "icfoer/gemma4-developer-agent-lora-200-test",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 360175348
+    },
+    {
+      "rank": 37,
+      "ref": "rainycloudss/gemma-4-agent-apex-v16-tdd-reproducer",
+      "best_public_score": 0.13,
+      "latest_script_version_id": 359808331
+    },
+    {
+      "rank": 38,
+      "ref": "lucifer19/black-cat-swe-agent-pack-instinct",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 354946379
+    },
+    {
+      "rank": 39,
+      "ref": "romanrozen/gemma-eda-baseline-for-a-start-lb-top-1",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 352222392
+    },
+    {
+      "rank": 40,
+      "ref": "mizeroluckygall/pathfinder-gemma-4-agent-eda-baseline",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 352794868
+    },
+    {
+      "rank": 41,
+      "ref": "kaitofukami/gemma4-agent-v8-shell",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 355054202
+    },
+    {
+      "rank": 42,
+      "ref": "hitarthjain0/gemma-4-apex-budget-fit-single-agent",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 356499141
+    },
+    {
+      "rank": 43,
+      "ref": "shorooghahmadi/gemma-4-budget-aware-agent-v10",
+      "best_public_score": 0.12,
+      "latest_script_version_id": 361047099
+    },
+    {
+      "rank": 44,
+      "ref": "nihilisticneuralnet/0-10-gemma-4-developer-agent-submission",
+      "best_public_score": 0.1,
+      "latest_script_version_id": 352722220
+    },
+    {
+      "rank": 45,
+      "ref": "msama01/gemma-4-developer-agent-eda",
+      "best_public_score": 0.1,
+      "latest_script_version_id": 352984594
+    },
+    {
+      "rank": 46,
+      "ref": "hsiaosuan/gemma-developer-agent-0-13-submission",
+      "best_public_score": 0.1,
+      "latest_script_version_id": 355057602
+    },
+    {
+      "rank": 47,
+      "ref": "mizeroluckygall/gemma-4-agent-eda-agent-validator",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 352600803
+    },
+    {
+      "rank": 48,
+      "ref": "twangygarlic449/gemma-super-basic",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 352464848
+    },
+    {
+      "rank": 49,
+      "ref": "ahmadalalony/gemma-4-starter-inside-the-harness-e-63dd0e",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 354099139
+    },
+    {
+      "rank": 50,
+      "ref": "kevlarzanderchi/gemma4-prompt-improvement-agent",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 354524347
+    },
+    {
+      "rank": 51,
+      "ref": "jek1wantaufik/gemma-4-developer-agent-lean",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 354535885
+    },
+    {
+      "rank": 52,
+      "ref": "liujiahua2358/gemma-4-v0-walkthrough-first-submission",
+      "best_public_score": 0.08,
+      "latest_script_version_id": 354863033
+    },
+    {
+      "rank": 53,
+      "ref": "leoprovorov/gemma-4-agent-working-baseline",
+      "best_public_score": 0.06,
+      "latest_script_version_id": 357759148
+    },
+    {
+      "rank": 54,
+      "ref": "nilanjansaha123/gemma-4-agent-eda-adk-starter",
+      "best_public_score": 0.06,
+      "latest_script_version_id": 352643007
+    },
+    {
+      "rank": 55,
+      "ref": "harishyadav0506/black-cat-swe-agent",
+      "best_public_score": 0.06,
+      "latest_script_version_id": 352917515
+    },
+    {
+      "rank": 56,
+      "ref": "ckskaggle/g4ca-basv1-0",
+      "best_public_score": 0.06,
+      "latest_script_version_id": 353948339
+    },
+    {
+      "rank": 57,
+      "ref": "tharunkumar369/gemma-4-developer-agent-top-1-master-baseline",
+      "best_public_score": 0.05,
+      "latest_script_version_id": 353563437
+    },
+    {
+      "rank": 58,
+      "ref": "kozykappa/gemma-4-triad-lb-score-0-05",
+      "best_public_score": 0.05,
+      "latest_script_version_id": 359727060
+    },
+    {
+      "rank": 59,
+      "ref": "lucifer19/agentic-verified-checkout-v2",
+      "best_public_score": 0.05,
+      "latest_script_version_id": 355882944
+    },
+    {
+      "rank": 60,
+      "ref": "starksource/getting-started-gemma-4-developer-agent",
+      "best_public_score": 0.05,
+      "latest_script_version_id": 359283737
+    },
+    {
+      "rank": 61,
+      "ref": "kiza123123/judgeguard-gemma-4-autonomous-developer-agent",
+      "best_public_score": 0.03,
+      "latest_script_version_id": 358893804
+    },
+    {
+      "rank": 62,
+      "ref": "ccuuuuy/dante-agent",
+      "best_public_score": 0.01,
+      "latest_script_version_id": 356341552
+    },
+    {
+      "rank": 63,
+      "ref": "haideptry/gemma-develop-first-try",
+      "best_public_score": 0,
+      "latest_script_version_id": 354388891
+    },
+    {
+      "rank": 64,
+      "ref": "rishavae/gemma4",
+      "best_public_score": 0,
+      "latest_script_version_id": 352324800
+    },
+    {
+      "rank": 65,
+      "ref": "koushikkumardinda/gemma-4-developer-agent-end-to-end-adk-starter",
+      "best_public_score": 0,
+      "latest_script_version_id": 352875101
+    },
+    {
+      "rank": 66,
+      "ref": "tomaszszyrowski/gemma4-day1-baseline",
+      "best_public_score": 0,
+      "latest_script_version_id": 353324565
+    },
+    {
+      "rank": 67,
+      "ref": "eeshsaxena/gemma4-baseline-agent",
+      "best_public_score": 0,
+      "latest_script_version_id": 354078926
+    },
+    {
+      "rank": 68,
+      "ref": "taylorclark637/gemmagraph-swe-offline-code-graph-developer-agent",
+      "best_public_score": 0,
+      "latest_script_version_id": 356937657
+    },
+    {
+      "rank": 69,
+      "ref": "nursrijan/gemma-4-swe-agent-complete-eda-adk-starter-kit",
+      "best_public_score": null,
+      "latest_script_version_id": 352193544
+    },
+    {
+      "rank": 70,
+      "ref": "foysalemonshanto/gemma4-agent-advanced-eda",
+      "best_public_score": null,
+      "latest_script_version_id": 352201024
+    },
+    {
+      "rank": 71,
+      "ref": "yuki16/gemma4-devagent-graphtools-submission-v2",
+      "best_public_score": null,
+      "latest_script_version_id": 352285113
+    },
+    {
+      "rank": 72,
+      "ref": "avikdas567/dual-space-spectral-graph-swe-agent-for-gemma-4",
+      "best_public_score": null,
+      "latest_script_version_id": 352358147
+    },
+    {
+      "rank": 73,
+      "ref": "chaitanyajamble/google-the-gemma-4-developer-agent-2",
+      "best_public_score": null,
+      "latest_script_version_id": 352331154
+    },
+    {
+      "rank": 74,
+      "ref": "busyaprime/119-of-129-sound-the-gemma-4-grader-rebuilt",
+      "best_public_score": null,
+      "latest_script_version_id": 353033669
+    },
+    {
+      "rank": 75,
+      "ref": "nursrijan/gemma-4-devagent-graph-reasoning-and-swe-engine",
+      "best_public_score": null,
+      "latest_script_version_id": 352455803
+    },
+    {
+      "rank": 76,
+      "ref": "tuynnguynee/notebook057a67b5a8",
+      "best_public_score": null,
+      "latest_script_version_id": 352390565
+    },
+    {
+      "rank": 77,
+      "ref": "chaitanyajamble/the-gemma-4-developer-agent-google",
+      "best_public_score": null,
+      "latest_script_version_id": 352402551
+    },
+    {
+      "rank": 78,
+      "ref": "tuyennguyen21pt/mainmainmain",
+      "best_public_score": null,
+      "latest_script_version_id": 352843765
+    },
+    {
+      "rank": 79,
+      "ref": "woldywei/gemma4-graph-coverage-audit",
+      "best_public_score": null,
+      "latest_script_version_id": 352438552
+    },
+    {
+      "rank": 80,
+      "ref": "woldywei/gemma4-graph-localization-bench",
+      "best_public_score": null,
+      "latest_script_version_id": 352439903
+    },
+    {
+      "rank": 81,
+      "ref": "woldywei/gemma4-repaired-graphs-regen",
+      "best_public_score": null,
+      "latest_script_version_id": 352443255
+    },
+    {
+      "rank": 82,
+      "ref": "woldywei/gemma4-localization-repaired",
+      "best_public_score": null,
+      "latest_script_version_id": 352456487
+    },
+    {
+      "rank": 83,
+      "ref": "ryanholbrook/getting-started-gemma-4-developer-agent",
+      "best_public_score": null,
+      "latest_script_version_id": 357794271
+    },
+    {
+      "rank": 84,
+      "ref": "woldywei/gemma4-rq4-query-encoding",
+      "best_public_score": null,
+      "latest_script_version_id": 352465112
+    },
+    {
+      "rank": 85,
+      "ref": "sayandeepghosh/gemma-4-paper-track-async-codegraph-resource",
+      "best_public_score": null,
+      "latest_script_version_id": 352495156
+    },
+    {
+      "rank": 86,
+      "ref": "zzgtylors/graphloc-can-gemma-4-pick-the-code-to-change",
+      "best_public_score": null,
+      "latest_script_version_id": 352713855
+    },
+    {
+      "rank": 87,
+      "ref": "manuelgagofernandez/google-the-gemma-4-developer-agent-competition",
+      "best_public_score": null,
+      "latest_script_version_id": 352530385
+    },
+    {
+      "rank": 88,
+      "ref": "proamari/anatomy-of-a-fix",
+      "best_public_score": null,
+      "latest_script_version_id": 352558364
+    },
+    {
+      "rank": 89,
+      "ref": "manuelgagofernandez/notebook13918923cc",
+      "best_public_score": null,
+      "latest_script_version_id": 354011845
+    },
+    {
+      "rank": 90,
+      "ref": "chaitanyajamble/google-the-gemma-4-developer",
+      "best_public_score": null,
+      "latest_script_version_id": 352568343
+    },
+    {
+      "rank": 91,
+      "ref": "zzgtylors/graphloc-auditing-gemma-4-agent-code-graphs",
+      "best_public_score": null,
+      "latest_script_version_id": 352617848
+    },
+    {
+      "rank": 92,
+      "ref": "harishyadav0506/gemma-4-developer-agent",
+      "best_public_score": null,
+      "latest_script_version_id": 352644198
+    },
+    {
+      "rank": 93,
+      "ref": "chaitanyajamble/google-the-gemma-4-developer-11",
+      "best_public_score": null,
+      "latest_script_version_id": 352659606
+    },
+    {
+      "rank": 94,
+      "ref": "salvapiol/gemmaforge-agent",
+      "best_public_score": null,
+      "latest_script_version_id": 352708198
+    },
+    {
+      "rank": 95,
+      "ref": "bang1850/notebook67dada2eb5",
+      "best_public_score": null,
+      "latest_script_version_id": 352696232
+    },
+    {
+      "rank": 96,
+      "ref": "leoprovorov/gemma-4-the-complete-guide-expanded",
+      "best_public_score": null,
+      "latest_script_version_id": 357759231
+    },
+    {
+      "rank": 97,
+      "ref": "nursrijan/gemma-4-devagent-kerashub-lora-training-on-tpu",
+      "best_public_score": null,
+      "latest_script_version_id": 352736912
+    },
+    {
+      "rank": 98,
+      "ref": "zzgtylors/graphloc-end-to-end-gemma-4-agent-skill",
+      "best_public_score": null,
+      "latest_script_version_id": 352840815
+    },
+    {
+      "rank": 99,
+      "ref": "denpugovkin/can-gemma-4-fix-an-unseen-repo-31b-qlora-study",
+      "best_public_score": null,
+      "latest_script_version_id": 353015460
+    },
+    {
+      "rank": 100,
+      "ref": "rajrajak99/tfd-agent-autonomous-swe-bench-resolution-with-ge",
+      "best_public_score": null,
+      "latest_script_version_id": 354418511
+    }
+  ]
+}

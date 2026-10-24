@@ -19,5 +19,8 @@
     "NOTICE.txt": "f0ef4c8ee8529b037b8e9aee9a6d46d95dc2c17aaa649be2789c8bebecfe61a4",
     "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
     "prompts/system.md": "88a8e7dd07399a4753da203a6be2f912dc23fccd9be8abd8fa1d383a21a60eaa"
-  }
+  },
+  "public_score": "0.15",
+  "result_status": "COMPLETE",
+  "result_confirmed_utc": "2026-10-24T01:02:12.934823+00:00"
 }

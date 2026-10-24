@@ -95,7 +95,7 @@ def load_agent_config(agent_dir=AGENT_DIR):
     return agent
 
 
-def validate_archive(archive_path, agent_dir=AGENT_DIR):
+def validate_archive(archive_path, agent_dir=AGENT_DIR, *, candidate_id=CANDIDATE_ID):
     expected = read_agent_files(agent_dir)
     load_agent_config(agent_dir)
     with zipfile.ZipFile(archive_path) as archive:
@@ -107,7 +107,7 @@ def validate_archive(archive_path, agent_dir=AGENT_DIR):
             if archive.read(name) != content:
                 raise ValueError(f"Stale or changed archive member: {name}")
     return {
-        "candidate": CANDIDATE_ID,
+        "candidate": candidate_id,
         "archive_sha256": sha256_file(archive_path),
         "archive_bytes": Path(archive_path).stat().st_size,
         "members": {name: hashlib.sha256(value).hexdigest() for name, value in expected.items()},
@@ -117,7 +117,7 @@ def validate_archive(archive_path, agent_dir=AGENT_DIR):
     }
 
 
-def build_bundle(agent_dir=AGENT_DIR, output_dir=ARTIFACTS):
+def build_bundle(agent_dir=AGENT_DIR, output_dir=ARTIFACTS, *, candidate_id=CANDIDATE_ID):
     load_agent_config(agent_dir)
     files = read_agent_files(agent_dir)
     output_dir = Path(output_dir).resolve()
@@ -130,7 +130,7 @@ def build_bundle(agent_dir=AGENT_DIR, output_dir=ARTIFACTS):
             info.external_attr = 0o100644 << 16
             info.compress_type = zipfile.ZIP_DEFLATED
             archive.writestr(info, content)
-    receipt = validate_archive(archive_path, agent_dir)
+    receipt = validate_archive(archive_path, agent_dir, candidate_id=candidate_id)
     write_json(output_dir / "build_receipt.json", receipt)
     return archive_path, receipt
 

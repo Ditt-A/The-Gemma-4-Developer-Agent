@@ -14,7 +14,7 @@ Kandidat `budget-aware-verified-v1` mempertahankan model, sampling, sembilan dek
 
 Prompt memulai perbaikan dari nama API, path, pesan error, atau simbol pada issue. Pencarian yang independen digabung; pembacaan dibatasi pada implementasi dan caller atau tes yang relevan. Edit menggunakan anchor pendek yang unik. Setelah kegagalan pencocokan berulang, prompt meminta satu penggantian teks yang dijaga oleh assertion, lalu verifikasi terarah.
 
-Checkpoint verifikasi terakhir terinspirasi oleh [E05 milik prvsiyan](https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=359522074). Ini merupakan hipotesis perbaikan alur, belum merupakan hasil ablation yang terukur pada kandidat ini.
+Checkpoint verifikasi terakhir terinspirasi oleh [E05 milik prvsiyan](https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=359522074). V1 memperoleh skor publik 0.15; perubahan ini belum terbukti meningkatkan skor. Mulai 24 Oktober, [reproduksi V10 tanpa perubahan](reproduction_v10.md) menjadi pembanding terpisah sebelum eksperimen prompt berikutnya.
 
 Snapshot riset 22 Oktober 2026 membandingkan 100 notebook dan 25 arsip submission. [Laporan metode](research/methods_review_20261022.id.md), [ranking CSV](research/code_ranking_20261022.csv), dan [ringkasan bundle](research/bundle_summary_20261022.json) menyimpan konteks pengamatan tersebut. Skor yang sama dan arsip yang identik tidak membuktikan efek kausal suatu teknik; beberapa arsip identik mendapat skor berbeda.
 

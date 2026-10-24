@@ -3,7 +3,7 @@ import argparse
 import datetime
 import json
 from pathlib import Path
-from common import AGENT_DIR, ARTIFACTS, COMPETITION, RUNS, submission_state, validate_archive, write_json
+from common import AGENT_DIR, ARTIFACTS, CANDIDATE_ID, COMPETITION, RUNS, submission_state, validate_archive, write_json
 from kaggle_client import api_client, plain
 
 PENDING_STATES = {"SUBMITTING", "SUBMITTED_AWAITING_RESULT", "NETWORK_UNCERTAIN"}
@@ -12,12 +12,19 @@ PENDING_STATES = {"SUBMITTING", "SUBMITTED_AWAITING_RESULT", "NETWORK_UNCERTAIN"
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--archive", type=Path, default=ARTIFACTS / "submission.zip")
+    parser.add_argument("--agent-dir", type=Path, default=AGENT_DIR)
+    parser.add_argument("--compiler-receipt", type=Path, default=RUNS / "validation/compiler.json")
+    parser.add_argument("--candidate-id", default=CANDIDATE_ID)
+    parser.add_argument("--description", default="Budget-Aware Verified V1")
+    parser.add_argument("--expected-sha256", help="Refuse an archive that differs from this exact SHA-256")
     parser.add_argument("--credentials-file", type=Path)
     parser.add_argument("--retry-failed", action="store_true")
     parser.add_argument("--dry-run", action="store_true", help="Validate locally without authenticating or uploading")
     args = parser.parse_args()
-    checked = validate_archive(args.archive, AGENT_DIR)
+    checked = validate_archive(args.archive, args.agent_dir, candidate_id=args.candidate_id)
     digest = checked["archive_sha256"]
+    if args.expected_sha256 and args.expected_sha256 != digest:
+        raise SystemExit("Archive SHA-256 does not match --expected-sha256; no upload sent.")
     ledger = RUNS / "state/submission.json"
     old = json.loads(ledger.read_text(encoding="utf-8")) if ledger.exists() else {}
     blocked = old.get("state") in PENDING_STATES or (
@@ -29,12 +36,12 @@ def main():
     if blocked:
         print("No upload: an existing submission is pending, uncertain, or already scored. Run scripts/status.py to reconcile it.")
         return
-    compiler_path = RUNS / "validation/compiler.json"
+    compiler_path = args.compiler_receipt
     compiler = json.loads(compiler_path.read_text(encoding="utf-8")) if compiler_path.exists() else {}
     if not (compiler.get("official_directory_validation") and compiler.get("scripted_adk_integration") and compiler.get("archive_sha256") == digest):
         raise SystemExit("Run scripts/validate_compiler.py on this exact agent before submitting.")
     api = api_client(args.credentials_file)
-    description = "Budget-Aware Verified V1 | direct ZIP upload | sha256=" + digest[:16]
+    description = args.description + " | direct ZIP upload | sha256=" + digest[:16]
     rows = plain(api.competition_submissions(COMPETITION)) or []
     matching = [row for row in rows if row.get("description") == description]
     if matching:
@@ -47,7 +54,7 @@ def main():
     timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
     if old:
         write_json(RUNS / "history" / (timestamp.replace(":", "-") + ".json"), old)
-    receipt = {"state": "SUBMITTING", "route": "direct ZIP upload", "competition": COMPETITION,
+    receipt = {"state": "SUBMITTING", "candidate": args.candidate_id, "route": "direct ZIP upload", "competition": COMPETITION,
         "archive_sha256": digest, "archive_bytes": args.archive.stat().st_size,
         "description": description, "started_utc": timestamp,
         "limits_before": plain(api.competition_get_submission_limits(COMPETITION))}

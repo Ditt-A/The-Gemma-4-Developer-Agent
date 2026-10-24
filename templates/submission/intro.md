@@ -1,7 +1,8 @@
 # Gemma 4 Budget-Aware Verified V1
 
 A single Gemma 4 31B agent with bounded navigation, exact-source editing and
-verification after the final edit. This derivative is **unscored** at build time.
+verification after the final edit. Its public score is **0.15**, from submission
+57549113, confirmed on 24 October 2026.
 The upstream public score of 0.22 belongs to flexonafft V10 and is not a result
 for this notebook.
 

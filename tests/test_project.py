@@ -13,6 +13,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from common import AGENT_DIR, build_bundle, submission_state, validate_archive
+from reproduce_public import MANIFEST, UPSTREAM_DIR, verify_reference
 
 
 class ProjectRegressionTests(unittest.TestCase):
@@ -57,6 +58,47 @@ class ProjectRegressionTests(unittest.TestCase):
                 z.writestr("unexpected.txt", "not part of the agent")
             with self.assertRaisesRegex(ValueError, "Archive members"):
                 validate_archive(archive)
+
+    def test_public_v10_build_matches_the_scored_artifact(self):
+        manifest = verify_reference()
+        with tempfile.TemporaryDirectory() as folder:
+            archive, receipt = build_bundle(UPSTREAM_DIR, folder, candidate_id=manifest["candidate_id"])
+            self.assertEqual(receipt["archive_sha256"], manifest["archive_sha256"])
+            self.assertEqual(archive.stat().st_size, manifest["archive_bytes"])
+            self.assertEqual(receipt["members"], manifest["members"])
+            self.assertEqual(receipt["candidate"], manifest["candidate_id"])
+
+    def test_reproduction_notebook_outputs_the_exact_public_zip(self):
+        import nbformat
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        notebook = nbformat.read(ROOT / "notebooks/reproduction_v10/reproduction.ipynb", as_version=4)
+        nbformat.validate(notebook)
+        original_cwd = Path.cwd()
+        with tempfile.TemporaryDirectory() as folder:
+            scope = {"__name__": "__main__"}
+            try:
+                os.chdir(folder)
+                with contextlib.redirect_stdout(io.StringIO()):
+                    for cell in notebook.cells:
+                        if cell.cell_type == "code":
+                            self.assertEqual(cell.outputs, [])
+                            exec(compile(cell.source, "reproduction notebook", "exec"), scope)
+                receipt = json.loads((scope["OUTPUT"] / "build_receipt.json").read_text(encoding="utf-8"))
+                self.assertEqual(receipt["archive_sha256"], manifest["archive_sha256"])
+                self.assertEqual(receipt["members"], manifest["members"])
+                self.assertTrue(receipt["exact_public_artifact_reproduced"])
+            finally:
+                os.chdir(original_cwd)
+
+    def test_wrong_expected_hash_stops_submission_before_authentication(self):
+        environment = {k: v for k, v in os.environ.items() if not k.startswith("KAGGLE_")}
+        with tempfile.TemporaryDirectory() as folder:
+            archive, _ = build_bundle(output_dir=folder)
+            result = subprocess.run([sys.executable, str(ROOT / "scripts/submit.py"), "--archive", str(archive),
+                "--expected-sha256", "0" * 64, "--dry-run"], cwd=folder, env=environment,
+                capture_output=True, text=True, encoding="utf-8")
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn("does not match --expected-sha256", result.stderr)
 
     def test_error_takes_precedence_over_complete(self):
         self.assertEqual(submission_state({"status": "COMPLETE", "errorDescription": "rerun exception"}), "FAILED")

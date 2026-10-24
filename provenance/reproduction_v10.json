@@ -1,0 +1,31 @@
+{
+  "candidate_id": "budget-aware-v10-exact-reproduction",
+  "competition": "gemma-4-developer-agent",
+  "checked_utc": "2026-10-24T01:04:41.245984+00:00",
+  "upstream_ref": "flexonafft/gemma-4-budget-aware-coding-agent-v2",
+  "upstream_url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+  "upstream_version": 10,
+  "upstream_script_version_id": 357955943,
+  "upstream_submission_id": 57139437,
+  "upstream_public_score": "0.22",
+  "archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "archive_bytes": 3713,
+  "members": {
+    "agent.yaml": "680799291cc7d156d06fb7bfb5577f683ccc0d555b00e8ddb662d577f9bfa5e4",
+    "configs/sampling.yaml": "571a934e89911734927533f1d36cbcc7b8d493592febe63b217e911cf7ed4926",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
+  },
+  "our_submission_id": 57577673,
+  "our_public_score": null,
+  "attribution": "Igor Zharov / flexonafft; based on matterhorn3838 Gemma 4 SuperAgent and the official starter. See LICENSE and NOTICE.txt.",
+  "our_submission_state": "SUBMITTED_AWAITING_RESULT",
+  "our_last_checked_utc": "2026-10-24T01:08:29.404110+00:00",
+  "our_notebook_url": "https://www.kaggle.com/code/adityaakbar/gemma-4-budget-aware-v10-exact-reproduction",
+  "our_notebook_version": 1,
+  "our_notebook_status": "COMPLETE",
+  "official_compiler_validation_passed": true,
+  "scripted_adk_tool_fixture_passed": true,
+  "kaggle_output_identical_to_upstream": true,
+  "server_stored_zip_identical": true
+}
