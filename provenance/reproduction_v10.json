@@ -17,15 +17,19 @@
     "prompts/system.md": "7f8dde62578a247ffbfc1a519b712ae65849fcfae1ee70c49e0628cab74cbef6"
   },
   "our_submission_id": 57577673,
-  "our_public_score": null,
+  "our_public_score": "0.17",
   "attribution": "Igor Zharov / flexonafft; based on matterhorn3838 Gemma 4 SuperAgent and the official starter. See LICENSE and NOTICE.txt.",
-  "our_submission_state": "SUBMITTED_AWAITING_RESULT",
-  "our_last_checked_utc": "2026-10-24T01:08:29.404110+00:00",
+  "our_submission_state": "SCORED",
+  "our_last_checked_utc": "2026-10-25T10:08:45.837594+00:00",
   "our_notebook_url": "https://www.kaggle.com/code/adityaakbar/gemma-4-budget-aware-v10-exact-reproduction",
   "our_notebook_version": 1,
   "our_notebook_status": "COMPLETE",
   "official_compiler_validation_passed": true,
   "scripted_adk_tool_fixture_passed": true,
   "kaggle_output_identical_to_upstream": true,
-  "server_stored_zip_identical": true
+  "server_stored_zip_identical": true,
+  "score_0_22_reproduced": false,
+  "post_scoring_server_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "private_task_level_diagnostics_available_via_api": false,
+  "score_difference_cause": "Unresolved: identical artifact confirmed; private task outcomes and serving conditions unavailable."
 }

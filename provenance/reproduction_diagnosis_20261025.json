@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-10-25T10:12:12.566637+00:00",
+  "our_submission_id": 57577673,
+  "our_public_score": "0.17",
+  "our_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "post_scoring_download_identical": true,
+  "public_notebook_output_comparison": [
+    {
+      "notebook_url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+      "linked_submission_id": 57139437,
+      "linked_public_score": "0.22",
+      "public_output_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887"
+    },
+    {
+      "notebook_url": "https://www.kaggle.com/code/kaiwalyaatulraut/google-the-gemma-4?scriptVersionId=359363545",
+      "linked_submission_id": 57311757,
+      "linked_public_score": "0.17",
+      "public_output_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887"
+    }
+  ],
+  "api_submission_episodes": {},
+  "causal_attribution": "Unresolved; these are not matched task-level executions.",
+  "participant_report": {
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750350",
+    "message_id": 3541468,
+    "posted_utc": "2026-10-20T06:08:00.857Z",
+    "summary": "Participant reports own identical ZIP scoring 0.15 and 0.10; mentions another artifact with scores 0.22, 0.17 and 0.15. Cause not isolated."
+  },
+  "staff_runtime_patch": {
+    "url": "https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/744354",
+    "message_id": 3530145,
+    "posted_utc": "2026-09-29T16:41:31.640Z",
+    "summary": "Staff confirmed an ADK/vLLM reasoning compatibility fix and said prior submissions would not all be rescored. This predates both V10 and our run, so it does not establish the cause of their score difference."
+  },
+  "independent_firsthand_experiment": "https://pilkwangkim.github.io/posts/Gemma-4-Developer-Agent-Part-2-Measuring-an-Agent-While-Its-Evaluator-Moved/"
+}

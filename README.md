@@ -2,7 +2,7 @@
 
 Proyek agen perbaikan kode untuk [Gemma 4 Developer Agent Competition](https://www.kaggle.com/competitions/gemma-4-developer-agent). Konfigurasi dan prompt utama ada di `agent/`; ZIP dan notebook dibangun dari sumber yang sama.
 
-Eksperimen V1 di `agent/` memperoleh skor publik **0.15**. Reproduksi terpisah sekarang memakai empat file Budget-Aware V10 asli tanpa perubahan dan menghasilkan ZIP yang identik byte demi byte dengan artefak publiknya. Skor **0.22** adalah hasil upstream flexonafft V10; skor reproduksi kita dicatat setelah evaluasi Kaggle. Lihat [reproduksi V10](docs/reproduction_v10.md) dan [metode dan atribusi](docs/methodology.md).
+Eksperimen V1 di `agent/` memperoleh skor publik **0.15**. Reproduksi terpisah memakai empat file Budget-Aware V10 asli tanpa perubahan dan menghasilkan ZIP yang identik byte demi byte dengan artefak publiknya. Reproduksi kita mendapat **0.17**, sementara skor upstream flexonafft V10 adalah **0.22**. Identitas artefak berhasil direproduksi; skor 0.22 belum berhasil direproduksi dan penyebab selisihnya belum terisolasi. Lihat [reproduksi V10](docs/reproduction_v10.md) dan [metode dan atribusi](docs/methodology.md).
 
 ```text
 agent/                      # Sumber konfigurasi dan prompt yang dikirim

@@ -3,8 +3,8 @@
 This notebook reproduces the four-file `submission.zip` from
 [flexonafft V10](https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943).
 It was the highest-scoring public Code notebook when checked on 24 October 2026,
-with a linked public score of **0.22**. That score belongs to the upstream submission;
-our reproduction needs its own competition evaluation.
+with a linked public score of **0.22**. Our submission 57577673 scored **0.17**,
+confirmed on 25 October 2026. The artifact was reproduced; the 0.22 score was not.
 
 The prompt, model, nine tools, sampling and evaluation configuration are unchanged.
 The final cell requires a byte-for-byte identical ZIP: 3,713 bytes, SHA-256

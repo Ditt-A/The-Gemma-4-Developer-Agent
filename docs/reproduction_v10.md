@@ -8,11 +8,17 @@ ZIP output dari versi tersebut diunduh ulang dan dibandingkan dengan build dari 
 |---|---|---|
 | V1 kita | SHA `a5f2c86dd33bf107...`, submission `57549113` | **0.15** |
 | Upstream flexonafft V10 | SHA `6ff73d104725cc31...`, versi 10 | **0.22** |
-| Reproduksi V10 kita | SHA sama persis, submission `57577673` | Diterima; menunggu evaluasi saat diperiksa 24 Oktober 01:08:29 UTC |
+| Reproduksi V10 kita | SHA sama persis, submission `57577673` | **0.17**, COMPLETE; dikonfirmasi 25 Oktober 10:08:45 UTC |
 
-Skor upstream belum menjadi hasil reproduksi kita. Riwayat riset juga menunjukkan arsip identik dapat memperoleh skor berbeda, sehingga selisih V1 tidak langsung menjelaskan pengaruh perubahan prompt.
+Reproduksi skor 0.22 belum berhasil. Identitas artefak dan hasil evaluasi merupakan dua pemeriksaan terpisah: ZIP kita identik, tetapi skor kita 0.17. Selisih itu belum menjelaskan pengaruh perubahan prompt V1 atau mengidentifikasi penyebab perubahan hasil eksekusi.
 
-[Notebook reproduksi di Kaggle](https://www.kaggle.com/code/adityaakbar/gemma-4-budget-aware-v10-exact-reproduction) versi 1 sudah COMPLETE. ZIP hasil notebook diunduh, dibandingkan dengan artefak upstream dan build lokal, lalu dikirim langsung sebagai submission `57577673`. Salinan ZIP yang tersimpan di server submission juga diunduh ulang dan terbukti identik. Belum ada skor atau error evaluasi dalam snapshot terakhir tersebut.
+[Notebook reproduksi di Kaggle](https://www.kaggle.com/code/adityaakbar/gemma-4-budget-aware-v10-exact-reproduction) versi 1 sudah COMPLETE. ZIP hasil notebook diunduh, dibandingkan dengan artefak upstream dan build lokal, lalu dikirim langsung sebagai submission `57577673`. Salinan ZIP yang tersimpan di server submission diunduh ulang setelah scoring dan masih identik. Submission selesai tanpa `errorDescription`, dengan skor publik 0.17.
+
+Pemeriksaan 25 Oktober mengonfirmasi bahwa [kaiwalyaatulraut V1](https://www.kaggle.com/code/kaiwalyaatulraut/google-the-gemma-4?scriptVersionId=359363545) mempunyai output ZIP dengan hash yang sama dan linked public score 0.17. Ini menguatkan bahwa menyalin artefak publik tersebut tidak menjamin skor 0.22. Kita membandingkan output notebook dan skor yang dihubungkan Kaggle; kita tidak mempunyai replay privat per task dari kedua submission tersebut.
+
+Seorang peserta [melaporkan rerun ZIP miliknya dari 0.15 menjadi 0.10](https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/750350), sekaligus menyebut satu artefak lain mendapat 0.22, 0.17 dan 0.15. [Eksperimen langsung Pilkwang Kim](https://pilkwangkim.github.io/posts/Gemma-4-Developer-Agent-Part-2-Measuring-an-Agent-While-Its-Evaluator-Moved/) juga mencatat skor berbeda pada paket identik dan menegaskan bahwa skor agregat belum memisahkan variasi eksekusi dari kondisi serving.
+
+Sampling dan kondisi evaluator merupakan faktor yang perlu diuji, bukan penyebab yang sudah terbukti untuk run kita. Konfigurasi memakai temperature 0.2; seed dan kondisi serving aktual scorer tidak terverifikasi. Staf [mengonfirmasi perbaikan reasoning ADK/vLLM](https://www.kaggle.com/competitions/gemma-4-developer-agent/discussion/744354), tetapi konfirmasi tersebut bertanggal 29 September, sebelum kedua run, sehingga tidak membuktikan selisih ini disebabkan patch tersebut. API episode submission kita mengembalikan objek kosong; trace privat, hasil per task, dan fingerprint deployment scorer tidak tersedia lewat pemeriksaan itu. [Manifest diagnosis](../provenance/reproduction_diagnosis_20261025.json) memisahkan bukti dari dugaan.
 
 Dari root repo:
 
