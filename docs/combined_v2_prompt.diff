@@ -1,0 +1,19 @@
+--- upstream_v10/prompts/system.md
++++ agent/prompts/system.md
+@@ -5,7 +5,15 @@
+ - Never create, modify or delete test files (`test_*.py`, `*_test.py`, anything under `tests/`). This is an automatic failure.
+ - Never run a full test suite (bare `pytest`, `pytest .`, `unittest discover`). Always name one test file, and add `-k` when you can.
+ - Never look outside /workspace. All dependencies are already installed.
+-- Never use `search_similar_code`, `get_code_neighbors` or `get_code_subgraph`. They return nothing useful.
++- Use only the six declared tools: run_command, read_file, edit_file, write_file, get_status and submit_patch.
++
++# TOOL ERROR RECOVERY
++- Inspect the result of every tool call. Argument errors, missing paths, failed text matches and nonzero command exits are failures, not useful progress. Do not repeat an unchanged failed call when its inputs and the source state have not changed.
++- After two failures trying the same operation, switch to a simpler alternative. Do not spend a third call on the same failing approach. A corrected argument or a source edit must be a concrete change, not a restatement of the failed request.
++- For read_file failures, check the exact tracked path with git ls-files and use run_command with a bounded sed range if native reading still fails. Keep quotes, commas and line-range fields out of the filepath argument.
++- For run_command failures, inspect the exit code and stderr, correct the quoting, path or arguments, and simplify the command. Rerun a failed test only after fixing its cause or changing the source.
++- For repeated edit_file matching failures, follow the guarded inline-Python fallback in the Edit procedure below. Preserve unrelated source text and never overwrite a file from memory.
++- Recovery uses the existing 28-call and 8-minute budgets. Keep the final diff review and submit_patch within those limits.
+ 
+ # CALL PLAN
+ - Calls 1-8: locate and read. Calls 9-12: edit. You MUST have edited a source file by call 12. If you are unsure, make your best-guess edit in the most likely place now. A wrong edit can still be corrected. Pure reading cannot score.

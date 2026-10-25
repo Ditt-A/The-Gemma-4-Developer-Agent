@@ -24,7 +24,7 @@ python scripts/validate_compiler.py
 
 Receipt ditulis ke `runs/validation/compiler.json` dan terikat pada hash ZIP. Perubahan prompt atau konfigurasi memerlukan validasi ulang sebelum upload.
 
-Untuk reproduksi publik V10, gunakan source directory, output directory, receipt dan notebook terpisah seperti pada [panduan reproduksi V10](reproduction_v10.md). Perintah default di halaman ini tetap membangun V1; `scripts/reproduce_public.py` membangun artefak upstream yang identik.
+Perintah default di halaman ini membangun Combined V2 dari `agent/`. Untuk memeriksa baseline historis, `scripts/reproduce_public.py` tetap membangun artefak upstream V10 yang identik; lihat [panduan reproduksi V10](reproduction_v10.md).
 
 Autentikasi menggunakan mekanisme standar Kaggle atau flag `--credentials-file` yang menunjuk JSON `username`/`key` di luar repo. Build, generator, pengujian lokal, bantuan CLI, dan dry run tidak memerlukan kredensial. Tidak ada script yang membaca otomatis folder Downloads.
 
@@ -47,7 +47,7 @@ File `kernel-metadata.json` yang berisi konfigurasi akun diabaikan Git. Setelah 
 
 ```powershell
 python scripts/notebooks.py --credentials-file C:\private\kaggle.json push --folder notebooks/submission --timeout 43200
-python scripts/notebooks.py --credentials-file C:\private\kaggle.json status YOUR_KAGGLE_USERNAME/gemma-4-budget-aware-verified-v1
+python scripts/notebooks.py --credentials-file C:\private\kaggle.json status YOUR_KAGGLE_USERNAME/gemma-4-budget-aware-combined-v2
 ```
 
 Notebook `gpu_smoke` memerlukan `metric/gemma-4-developer-agent-wheelhouse`, model Gemma 4 31B versi 2, L4x4, dan internet nonaktif. Runtime startup server default adalah 1.200 detik; notebook perlu waktu untuk instalasi dan pemuatan model. Contoh sesi pemeriksaan:

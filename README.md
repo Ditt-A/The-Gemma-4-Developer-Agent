@@ -2,10 +2,12 @@
 
 Proyek agen perbaikan kode untuk [Gemma 4 Developer Agent Competition](https://www.kaggle.com/competitions/gemma-4-developer-agent). Konfigurasi dan prompt utama ada di `agent/`; ZIP dan notebook dibangun dari sumber yang sama.
 
-Eksperimen V1 di `agent/` memperoleh skor publik **0.15**. Reproduksi terpisah memakai empat file Budget-Aware V10 asli tanpa perubahan dan menghasilkan ZIP yang identik byte demi byte dengan artefak publiknya. Reproduksi kita mendapat **0.17**, sementara skor upstream flexonafft V10 adalah **0.22**. Identitas artefak berhasil direproduksi; skor 0.22 belum berhasil direproduksi dan penyebab selisihnya belum terisolasi. Lihat [reproduksi V10](docs/reproduction_v10.md) dan [metode dan atribusi](docs/methodology.md).
+Kandidat utama sekarang **Budget-Aware Combined V2** di `agent/`. Satu agen Gemma 4 31B menggabungkan **temperature 0**, **enam tool inti tanpa graph**, dan **instruksi pemulihan setelah kegagalan tool berulang**. Dasarnya adalah prompt V10 asli; anggaran model dan task dipertahankan. Lihat [implementasi Combined V2](docs/combined_v2.md) dan [metode dan atribusi](docs/methodology.md).
+
+Hasil historis: Verified V1 memperoleh **0.15** dan reproduksi persis V10 kita memperoleh **0.17**. Skor upstream flexonafft V10 adalah **0.22**. Skor tersebut tidak menjadi klaim untuk Combined V2; hasil kandidat baru dicatat terpisah pada [manifest](provenance/combined_v2.json).
 
 ```text
-agent/                      # Sumber konfigurasi dan prompt yang dikirim
+agent/                      # Satu kandidat utama Combined V2
   agent.yaml
   eval_config.yaml
   configs/sampling.yaml
@@ -19,7 +21,7 @@ templates/                  # Sumber sel notebook yang dapat diedit
 configs/kaggle/             # Contoh metadata dengan username placeholder
 tests/                      # Pemeriksaan portabilitas dan regresi
 docs/                       # Metode, cara submit, dan catatan eksperimen
-provenance/                 # Sumber upstream, manifest reproduksi, hash, atribusi
+provenance/                 # Sumber upstream, manifest kandidat, hash, atribusi
 artifacts/                  # ZIP dan build receipt; diabaikan Git
 runs/                       # Status, validasi, output, dan histori lokal; diabaikan Git
 .local/                     # Wheel compiler dan referensi mesin ini; diabaikan Git

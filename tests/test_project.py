@@ -12,17 +12,31 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from common import AGENT_DIR, build_bundle, submission_state, validate_archive
+from common import AGENT_DIR, CANDIDATE_ID, build_bundle, load_agent_config, submission_state, validate_archive
 from reproduce_public import MANIFEST, UPSTREAM_DIR, verify_reference
 
 
 class ProjectRegressionTests(unittest.TestCase):
-    def test_original_submission_bytes_are_preserved(self):
-        historical = json.loads((ROOT / "provenance/submitted_v1.json").read_text(encoding="utf-8"))
+    def test_current_combined_candidate_matches_its_manifest(self):
+        manifest = json.loads((ROOT / "provenance/combined_v2.json").read_text(encoding="utf-8"))
         with tempfile.TemporaryDirectory() as folder:
             archive, receipt = build_bundle(output_dir=folder)
-            self.assertEqual(receipt["archive_sha256"], historical["submitted_archive_sha256"])
-            self.assertEqual(archive.stat().st_size, historical["submitted_archive_bytes"])
+            self.assertEqual(receipt["candidate"], CANDIDATE_ID)
+            self.assertEqual(receipt["archive_sha256"], manifest["archive_sha256"])
+            self.assertEqual(archive.stat().st_size, manifest["archive_bytes"])
+
+    def test_all_three_changes_are_combined_without_changing_other_budgets(self):
+        current = load_agent_config()
+        upstream = load_agent_config(UPSTREAM_DIR)
+        expected_generation = dict(upstream["generate_content_config"], temperature=0)
+        self.assertEqual(current["generate_content_config"], expected_generation)
+        self.assertEqual(current["model"], upstream["model"])
+        self.assertEqual(current["tools"], ["run_command", "read_file", "edit_file", "write_file", "get_status", "submit_patch"])
+        self.assertEqual((AGENT_DIR / "eval_config.yaml").read_bytes(), (UPSTREAM_DIR / "eval_config.yaml").read_bytes())
+        self.assertIn("# TOOL ERROR RECOVERY", current["instruction"])
+        self.assertIn("After two failures trying the same operation, switch to a simpler alternative.", current["instruction"])
+        for removed in ("search_similar_code", "get_code_neighbors", "get_code_subgraph"):
+            self.assertNotIn(removed, current["instruction"])
 
     def test_packaging_works_outside_the_repository_cwd(self):
         with tempfile.TemporaryDirectory() as folder:
@@ -46,8 +60,9 @@ class ProjectRegressionTests(unittest.TestCase):
                             self.assertEqual(cell.outputs, [])
                             exec(compile(cell.source, "generated notebook", "exec"), scope)
                 receipt = validate_archive(scope["archive_path"])
-                historical = json.loads((ROOT / "provenance/submitted_v1.json").read_text(encoding="utf-8"))
-                self.assertEqual(receipt["archive_sha256"], historical["submitted_archive_sha256"])
+                manifest = json.loads((ROOT / "provenance/combined_v2.json").read_text(encoding="utf-8"))
+                self.assertEqual(receipt["archive_sha256"], manifest["archive_sha256"])
+                self.assertEqual(scope["receipt"]["candidate"], CANDIDATE_ID)
             finally:
                 os.chdir(original_cwd)
 

@@ -23,4 +23,12 @@ No additional license or notice members are inserted into that exact archive.
 License and attribution for these repository copies are retained here and in LICENSE.
 Original notebook credits: Igor Zharov / flexonafft; matterhorn3838,
 Gemma 4 SuperAgent; the official sample_submission prompt and community
-investigations of graph tools. Reproduction score requires separate evaluation.
+investigations of graph tools. Our exact V10 reproduction scored 0.17.
+
+Budget-Aware Combined V2 (2026-10-25):
+The current agent/ uses the original V10 prompt as its base and combines
+temperature zero, removal of the three graph tool declarations, and instructions
+for recovery after repeated tool errors. It retains the source model, thinking
+and output budgets, top-p and evaluation limits. Earlier Verified V1 prompt
+modifications are not carried into Combined V2. Recovery is prompt-guided.
+No score is claimed for Combined V2 before its own competition evaluation.

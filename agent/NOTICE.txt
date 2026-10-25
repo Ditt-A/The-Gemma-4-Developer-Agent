@@ -1,11 +1,12 @@
-Gemma 4 Budget-Aware Verified V1 (2026).
+Gemma 4 Budget-Aware Combined V2 (2026).
 This submission adapts the public Budget-Aware V10 agent prompt and configuration:
 Igor Zharov / flexonafft, Gemma 4 | Budget-Aware Coding Agent v2.
 https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943
 The source credits matterhorn3838's Gemma 4 SuperAgent and the official starter.
-Post-final-edit verification is informed by prvsiyan's E05 experiment:
-https://www.kaggle.com/code/prvsiyan/gemma-and-the-shape-of-doubt?scriptVersionId=359522074
-Local modifications: final-revision verification, bounded checks with accurate exit
-status, current protected-file semantics, early stopping, and explicit completion.
-No score is claimed for this derivative. Prior scores belong to the cited sources.
+Combined modifications: temperature zero, six native tools without graph tools,
+and prompt-guided recovery from repeated tool errors.
+The model, top-p, output/thinking budgets and evaluation limits are unchanged.
+Earlier Verified V1 prompt changes are not included in this candidate.
+Our exact V10 reproduction scored 0.17; upstream V10's linked score is 0.22.
+No leaderboard score is claimed for this combined candidate at build time.
 Distributed under Apache License 2.0; original attributions are preserved here.

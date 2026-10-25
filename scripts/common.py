@@ -11,7 +11,7 @@ AGENT_DIR = ROOT / "agent"
 ARTIFACTS = ROOT / "artifacts"
 RUNS = ROOT / "runs"
 COMPETITION = "gemma-4-developer-agent"
-CANDIDATE_ID = "budget-aware-verified-v1"
+CANDIDATE_ID = "budget-aware-combined-v2"
 ALLOWED_EXTENSIONS = {".yaml", ".yml", ".md", ".txt", ".py", ".json", ".safetensors"}
 ALLOWED_MODELS = {
     "gemma-4-31b-it-qat-w4a16-ct", "gemma-4-12b-it-qat-w4a16-ct",

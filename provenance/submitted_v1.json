@@ -22,5 +22,6 @@
   },
   "public_score": "0.15",
   "result_status": "COMPLETE",
-  "result_confirmed_utc": "2026-10-24T01:02:12.934823+00:00"
+  "result_confirmed_utc": "2026-10-24T01:02:12.934823+00:00",
+  "source_git_commit": "93361dc6accffc834ad264872f535df401a2105a"
 }

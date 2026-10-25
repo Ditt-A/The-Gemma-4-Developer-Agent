@@ -11,7 +11,7 @@ try:
     response.raise_for_status()
     served = response.json()['data'][0]['id']
     result = requests.post(api_url + '/chat/completions', headers=headers, timeout=60,
-        json={'model': served, 'temperature': 0.2, 'top_p': 0.95, 'max_tokens': 1024,
+        json={'model': served, 'temperature': generation['temperature'], 'top_p': generation['top_p'], 'max_tokens': 1024,
               'messages': [{'role':'system','content':'You inspect source code using the provided native tools. Call read_file to inspect a file; do not invent its contents.'},
                            {'role':'user','content':'Inspect the file pyproject.toml with read_file, start_line 1 and end_line 40. Make that tool call now.'}],
               'tools': [{'type':'function','function':{'name':'read_file','description':'Read a source file.',

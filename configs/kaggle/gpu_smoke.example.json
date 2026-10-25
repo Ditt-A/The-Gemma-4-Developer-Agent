@@ -1,6 +1,6 @@
 {
-  "id": "YOUR_KAGGLE_USERNAME/gemma-4-31b-gpu-smoke-v1",
-  "title": "Gemma 4 31B GPU Smoke V1",
+  "id": "YOUR_KAGGLE_USERNAME/gemma-4-31b-combined-v2-gpu-smoke",
+  "title": "Gemma 4 31B Combined V2 GPU Smoke",
   "code_file": "gpu_smoke.ipynb",
   "language": "python",
   "kernel_type": "notebook",

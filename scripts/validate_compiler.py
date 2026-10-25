@@ -121,7 +121,10 @@ def main():
             limits=limits, generation_constraints=constraints)
         assert agent.generate_content_config.max_output_tokens == config["generate_content_config"]["max_output_tokens"]
         assert agent.generate_content_config.thinking_config.thinking_budget == config["generate_content_config"]["thinking_config"]["thinking_budget"]
-        assert len(agent.tools) == 9 and len(agent.sub_agents) == 0
+        assert agent.generate_content_config.temperature == config["generate_content_config"]["temperature"]
+        compiled_tool_names = sorted(getattr(tool, "name", None) or tool.__name__ for tool in agent.tools)
+        assert compiled_tool_names == sorted(config["tools"]), compiled_tool_names
+        assert len(agent.sub_agents) == 0
 
         async def exercise():
             sessions = InMemorySessionService()
@@ -138,7 +141,8 @@ def main():
         assert result.returncode == 0, result.stderr
         receipt = {"candidate": args.candidate_id, "notebook_cells_executed": False, "official_directory_validation": True,
             "official_compiler": "adk-submission 0.2.13 / google-adk 1.36.1",
-            "compiled_single_agent": True, "compiled_tools": sorted(tools), "scripted_adk_integration": True,
+            "compiled_single_agent": True, "compiled_tools": compiled_tool_names,
+            "compiled_temperature": agent.generate_content_config.temperature, "scripted_adk_integration": True,
             "native_tool_sequence": calls, "events": len(events),
             "fixture_behavioral_assertions": True, "quality_benchmark": False,
             "archive_sha256": sha256_file(bundle)}

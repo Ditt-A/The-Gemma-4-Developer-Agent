@@ -15,7 +15,7 @@ def main():
     parser.add_argument("--agent-dir", type=Path, default=AGENT_DIR)
     parser.add_argument("--compiler-receipt", type=Path, default=RUNS / "validation/compiler.json")
     parser.add_argument("--candidate-id", default=CANDIDATE_ID)
-    parser.add_argument("--description", default="Budget-Aware Verified V1")
+    parser.add_argument("--description", default="Budget-Aware Combined V2")
     parser.add_argument("--expected-sha256", help="Refuse an archive that differs from this exact SHA-256")
     parser.add_argument("--credentials-file", type=Path)
     parser.add_argument("--retry-failed", action="store_true")

@@ -1,0 +1,67 @@
+{
+  "candidate_id": "budget-aware-combined-v2",
+  "created_utc": "2026-10-25T10:43:53.369020+00:00",
+  "competition": "gemma-4-developer-agent",
+  "source_directory": "agent",
+  "base": "Original Budget-Aware V10; not the Verified V1 derivative",
+  "upstream_url": "https://www.kaggle.com/code/flexonafft/gemma-4-budget-aware-coding-agent-v2?scriptVersionId=357955943",
+  "upstream_archive_sha256": "6ff73d104725cc31deadd18787f3f55e5ce534889cec82387e3b280637d34887",
+  "changes_combined": [
+    "temperature 0",
+    "six native tools without graph tools",
+    "prompt-guided repeated tool error recovery"
+  ],
+  "model": "gemma-4-31b-it-qat-w4a16-ct",
+  "tools": [
+    "run_command",
+    "read_file",
+    "edit_file",
+    "write_file",
+    "get_status",
+    "submit_patch"
+  ],
+  "generate_content_config": {
+    "temperature": 0,
+    "top_p": 0.95,
+    "max_output_tokens": 8192,
+    "thinking_config": {
+      "thinking_budget": 4096,
+      "include_thoughts": true
+    }
+  },
+  "evaluation_budgets_unchanged": true,
+  "recovery_enforcement": "prompt instruction; no runtime callback",
+  "archive_sha256": "842b902e2a86aa61fe2ac97d156bbfae91162614d14b4a731a1ee2190c776c9a",
+  "archive_bytes": 8814,
+  "members": {
+    "agent.yaml": "6ad913b0c0cb67d669116a4074d7b520b3a69c8d5aa960b6abe51f9850b45227",
+    "configs/sampling.yaml": "474cd780004a104985a2dfe86827eabe68fd017c536d6e044a80adce31765a78",
+    "eval_config.yaml": "916cf6cb34a6cc3de39837fa72cac681599b9ac2a3ee0b893adadfd36474c531",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "NOTICE.txt": "d780375bef783725c23e025ef0e4dee9eaf611360556e65ca82691e3f9df33f9",
+    "prompts/system.md": "167a267091b302e7b2d4197e3b38db242c3e92dd91e50c78d5bed83eedcf9b43"
+  },
+  "submission_id": 57626978,
+  "public_score": null,
+  "quality_benchmark_passed": false,
+  "historical_v1_source_git_commit": "93361dc6accffc834ad264872f535df401a2105a",
+  "submission_state": "SUBMITTED_AWAITING_RESULT",
+  "last_checked_utc": "2026-10-25T10:47:04.251774+00:00",
+  "official_compiler_validation_passed": true,
+  "scripted_adk_integration_passed": true,
+  "compiled_tools": [
+    "edit_file",
+    "get_status",
+    "read_file",
+    "run_command",
+    "submit_patch",
+    "write_file"
+  ],
+  "compiled_temperature": 0.0,
+  "regression_tests_passed": 11,
+  "notebook_url": "https://www.kaggle.com/code/adityaakbar/gemma-4-budget-aware-combined-v2",
+  "notebook_version": 1,
+  "notebook_status": "COMPLETE",
+  "kaggle_output_matches_local_build": true,
+  "server_stored_zip_identical": true
+}

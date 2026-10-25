@@ -15,8 +15,11 @@ Catatan ini merupakan ringkasan historis, bukan status live Kaggle. Gunakan `pyt
 | 24 Oktober 2026 | Notebook reproduksi versi 1 | COMPLETE; ZIP hasil Kaggle identik dengan output publik sumber |
 | 24 Oktober 2026 | Submission reproduksi `57577673` | Diterima pukul 01:08:01 UTC; ZIP tersimpan di server identik; snapshot 01:08:29 UTC belum memuat error atau skor |
 | 25 Oktober 2026 | Hasil reproduksi `57577673` | COMPLETE, skor publik **0.17**; ZIP server setelah scoring tetap identik dengan output upstream; skor 0.22 belum direproduksi |
+| 25 Oktober 2026 | Combined V2, tiga metode digabung | Temperature 0, enam tool dan prompt pemulihan error; compiler resmi dan 11 tes lulus |
+| 25 Oktober 2026 | Notebook Combined V2 versi 1 | COMPLETE; ZIP 8.814 byte cocok dengan build lokal, SHA-256 `842b902e2a86aa61fe2ac97d156bbfae91162614d14b4a731a1ee2190c776c9a` |
+| 25 Oktober 2026 | Submission Combined V2 `57626978` | Diterima; ZIP server identik; snapshot 10:47:04 UTC belum memuat error atau skor |
 
-ZIP V1 memiliki SHA-256 `a5f2c86dd33bf107724515db42002ebc3c7a330cbd1e69fc0fe84f63b4b76d8d`. Saat struktur repo disusun ulang, build dari `agent/` menghasilkan arsip yang identik, termasuk byte ZIP. Pemeriksaan ini melindungi identitas artefak selama restrukturisasi dan tidak mengukur kualitas agen.
+ZIP V1 memiliki SHA-256 `a5f2c86dd33bf107724515db42002ebc3c7a330cbd1e69fc0fe84f63b4b76d8d`. Saat struktur repo disusun ulang, build dari `agent/` menghasilkan arsip yang identik, termasuk byte ZIP. Mulai Combined V2, `agent/` berisi kandidat baru; sumber V1 tersedia pada commit historis yang dicatat dalam manifestnya. Pemeriksaan identitas ini tidak mengukur kualitas agen.
 
 Penyebab internal kegagalan rerun pertama belum terkonfirmasi karena API tidak menyediakan traceback scorer. [Audit format](submission_error_review.id.md) mencatat fakta yang terverifikasi. File lengkap dan receipt impor disimpan lokal di `runs/imported_20261023/`; state pengiriman terbaru ada di `runs/state/submission.json`.
 
